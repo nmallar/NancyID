@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Portfolio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #intro {
+        width: 100%;
+        height: 140vh;
+        background-size: cover;
+        position: relative;
+        padding-top: 82px;
+    }
+    #rework{
+        width:100%;
+
+    }
+        #intro:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #intro h1 {
+            margin: 0;
+            font-size: 45px;
+            font-weight: 300;
+            color:black;
+        }
+
+        #intro h2 {
+            color: black;
+            margin: 10px 0 0 0;
+            font-size: 24px;
+        }
+
+        #intro .btn-get-started {
+            font-family: "Futura Md BT", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 25px;
+            transition: 0.5s;
+            margin-top: 30px;
+            color: #fff;
+            background: #d82d4b;
+            border: 2px solid #d82d4b;
+        }
+
+            #intro .btn-get-started:hover {
+                background: transparent;
+                border-color: #d82d4b;
+                color: #d82d4b;
+            }
+</style>
+@*<section id="intro" class="d-flex align-items-center">
+  
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row">
+            <div class="col-xl-6" style="padding-top: 125px">
+                <h1>
+                    Hi, I'm <strong style="color:#d82d4b">Nancy.</strong>
+                </h1>
+                <h2>
+                    I design aesthetically compelling eLearning that is simple yet significant.
+                </h2>
+                <a href="#about" class="btn-get-started scrollto">Get to Know Me</a>
+            </div>
+            <div class="col-xl-6">
+                <img src="~/img/nancy avatar.JPG" />
+            </div>
+        </div>
+    </div>
+
+</section>*@
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row">
+            <div class="col-xl-12" style="text-align: center;">
+                <h1>
+                  Portfolio
+                </h1>
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+<section id="intro">
+    <div style="padding-left:150px;">
+        <h1>
+            Recent Work
+        </h1>
+        <h6 style="padding-top:20px;padding-bottom:30px">
+            To learn more about how I solve problems and design solutions, you can explore some of my <br /> recent projects by selecting each image below.
+        </h6>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-6">
+                <a href="https://drive.google.com/file/d/19EwZmuE8p8k0jrjs5sVpsUVcOwEoDZU7/view?usp=sharing" target="_blank">  <img src="~/img/s1.png" alt="Nancy"></a>
+            </div>
+            <div class="col-xl-6">
+                <a href="https://drive.google.com/file/d/1O6zxJqVCcWb-4HBwC4QOmjFZ5gqQBBj0/view?usp=sharing" target="_blank">
+                    <img src="~/img/s2.png">
+                </a>
+            </div>
+        </div>
+        <div class="row" style="padding-top:20px">
+            <div class="col-xl-6">
+                <a href="https://drive.google.com/file/d/1K1Km71cMTHfINfL2u9YnChvx1zL7t2ve/view?usp=sharing" target="_blank">  <img src="~/img/s3.png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+

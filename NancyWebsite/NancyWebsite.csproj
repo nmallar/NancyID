@@ -139,7 +139,6 @@
     <Content Include="Content\swiper-bundle.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="img\background1.png" />
-    <Content Include="img\fonts\boxicons.svg" />
     <Content Include="Global.asax" />
     <Content Include="img\background.png" />
     <Content Include="img\blog\blog-1.jpg" />
@@ -169,10 +168,12 @@
     <Content Include="img\clients\client-8.png" />
     <Content Include="img\clients\client-9.png" />
     <Content Include="img\favicon.png" />
+    <Content Include="img\fonts\boxicons.svg" />
     <Content Include="img\hero-bg.jpg" />
     <Content Include="img\hero.png" />
     <Content Include="img\logo-transparent.png" />
     <Content Include="img\Logo.png" />
+    <Content Include="img\nancy avatar.JPG" />
     <Content Include="img\nancyfav.png" />
     <Content Include="img\portfolio\portfolio-1.jpg" />
     <Content Include="img\portfolio\portfolio-2.jpg" />
@@ -200,6 +201,7 @@
     <Content Include="img\team\team-2.jpg" />
     <Content Include="img\team\team-3.jpg" />
     <Content Include="img\team\team-4.jpg" />
+    <Content Include="img\testimonial.png" />
     <Content Include="img\testimonials\testimonials-1.jpg" />
     <Content Include="img\testimonials\testimonials-2.jpg" />
     <Content Include="img\testimonials\testimonials-3.jpg" />
@@ -245,12 +247,18 @@
     <Content Include="img\fonts\boxicons.eot" />
     <Content Include="img\fonts\boxicons.ttf" />
     <Content Include="img\fonts\boxicons.woff" />
-    <Content Include="img\fonts\remixicon.less" />
     <Content Include="img\fonts\boxicons.woff2" />
+    <Content Include="img\fonts\remixicon.less" />
     <Content Include="img\fonts\remixicon.woff" />
     <Content Include="img\fonts\remixicon.woff2" />
     <None Include="packages.config" />
+    <Content Include="PPT\s1.pdf" />
+    <Content Include="PPT\s2.pdf" />
+    <Content Include="PPT\s3.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,14 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<style>
+    .servivelink:hover {
+        color: black;
+    }
+    .servivelink {
+        color: red;
+    }
+</style>
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
 
@@ -39,27 +46,94 @@
                     <div class="swiper-slide"><img src="~/img/clients/client-7.png" class="img-fluid" alt=""></div>
                     <div class="swiper-slide"><img src="~/img/clients/client-8.png" class="img-fluid" alt=""></div>
                     <div class="swiper-slide"><img src="~/img/clients/client-9.png" class="img-fluid" alt=""></div>
-                   
                 </div>
-                <div class="swiper-pagination"></div>
+                @*<div class="swiper-pagination"></div>*@
             </div>
 
         </div>
     </section><!-- End Clients Section -->
-    <!-- ======= about Section ======= -->
-    <section id="info" class="infos">
-        <div class="container" data-aos="fade-up">
+    <section id="clients" class="clients section-bg">
+        <div class="container" data-aos="zoom-in">
+            <div class="row gy-4">
 
+                <div class="col-lg-12">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
 
-            <div class="info-box">
-                <div class="section-title">
-                    <h2>India-based Learning Experience Design</h2>
+                            <div class="swiper-slide" style="text-align: center;">
+                                <div class="testimonial-thumb" style="text-align: center; padding-bottom:20px;">
+                                    <img src="~/img/testimonial.png" alt="Testimonial Image">
+                                </div>
+                                <p>Found Nancy very passionate about training. Quite detailed in her preparation and content development. Gamification of training is an area that excites her. Makes sure that training does not become a uni directional flow of instruction. Wish her all the best.</p>
+                                <span>
+                                    Asit Bole
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide" style="text-align: center;">
+                                <div class="testimonial-thumb" style="text-align: center; padding-bottom:20px;">
+                                    <img src="~/img/testimonial.png" alt="Testimonial Image">
+                                </div>
+                                <p>Nancy is a seasoned instructional designer, and keeps herself updated with latest instructional designing techniques. Her ideas are innovative and out of the box. She's a great asset to the team as well as the organisation.</p>
+                                <span>
+                                    Andrea Sait
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide" style="text-align: center;">
+                                <div class="testimonial-thumb" style="text-align: center; padding-bottom:20px;">
+                                    <img src="~/img/testimonial.png" alt="Testimonial Image">
+                                </div>
+                                <p>Nancy is a well-rounded Instructional Designer and she has been able to make disruptive moves challenging the status quo of processes set in an Organisation. She utilizes her resources very gainfully and her ability to think out of the box and come up with creative new ideas all the time is very refreshing. It has been a pleasure to work with Nancy and she is an absolute asset in any Organization that she decides to build her career in. All the best Nancy in all that you do!</p>
+                                <span>
+                                    Roopa Shetty
+                                </span>
+                            </div>
+                            <div class="swiper-slide" style="text-align: center;">
+                                <div class="testimonial-thumb" style="text-align: center; padding-bottom:20px;">
+                                    <img src="~/img/testimonial.png" alt="Testimonial Image">
+                                </div>
+                                <p>Nancy is a very smart and knowledgeable Instructional Designer. She takes full responsibility for her tasks and accomplishes them without much supervision. She understands startup space quite well and comes up with innovative ideas for better results. She is a good team player and great to work with. She will be a valuable asset to any team in the eLearning space.</p>
+                                <span>
+                                    Sridhar Tirumala
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <h5>I’m on a mission to create learning solutions that solve business problems. I design scenarios and use powerful visuals to inspire my learners.</h5>
+
             </div>
+            @*<div class="clients-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><p>Hi</p></div>
+                        <div class="swiper-slide"><p>Hello</p></div>
+                        <div class="swiper-slide"><p>Bye</p></div>
+                        <div class="swiper-slide"><p>See you soon</p></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>*@
 
         </div>
     </section>
+    <!-- ======= about Section ======= -->
+    @*<section id="info" class="infos">
+            <div class="container" data-aos="fade-up">
+
+
+                <div class="info-box">
+                    <div class="section-title">
+                        <h2>India-based Learning Experience Design</h2>
+                    </div>
+                    <h5>I’m on a mission to create learning solutions that solve business problems. I design scenarios and use powerful visuals to inspire my learners.</h5>
+                </div>
+
+            </div>
+        </section>*@
     <!-- End Counts Section -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg ">
@@ -67,41 +141,51 @@
 
             <div class="section-title">
                 <h2>Services</h2>
-           </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-3">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <!--<i class="bi bi-briefcase"></i>-->
                         <img src="~/img/s1.png" width="100" height="60" />
-                        <h4><a href="#">e-Learning Development</a></h4>
-                        <p>From identifying business needs, charting out course outlines and layouts, 
-                        I’m adept at aligning learning materials to specific business goals.</p>
+                        @*<h4><a href="#">e-Learning Development</a></h4>*@
+                        <h4 class="servivelink">e-Learning Development</h4>
+                        <p>
+                            From identifying business needs, charting out course outlines and layouts,
+                            I’m adept at aligning learning materials to specific business goals.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                         <!--<i class="bi bi-card-checklist"></i>-->
                         <img src="~/img/s2.png" width="100" height="60" />
-                        <h4><a href="#">Training Consultation</a></h4>
-                        <p>I offer insights on designing effective programs, suitable LMS platforms, calculating value of learning 
-                        solutions based on your unique business needs.</p>
+                        @*<h4><a href="#">Training Consultation</a></h4>*@
+                        <h4 class="servivelink">Training Consultation</h4>
+                        <p>
+                            I offer insights on designing effective programs, suitable LMS platforms, calculating value of learning
+                            solutions based on your unique business needs.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <!--<i class="bi bi-bar-chart"></i>-->
                         <img src="~/img/s3.png" width="100" height="60" />
-                        <h4><a href="#">Learning Videos</a></h4>
-                        <p>I help organizations create learning videos using animation and whiteboard videos. 
-                        I am skilled at creating software tutorials using Vyond and Camtasia.</p>
+                        @*<h4><a href="#">Learning Videos</a></h4>*@
+                        <h4 class="servivelink">Learning Videos</h4>
+                        <p>
+                            I help organizations create learning videos using animation and whiteboard videos.
+                            I am skilled at creating software tutorials using Vyond and Camtasia.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3 ">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
                         <!--<i class="bi bi-binoculars"></i>-->
                         <img src="~/img/tabs-1.jpg" width="100" height="60" />
-                        <h4><a href="#">Creative Content Creation</a></h4>
+                        @*<h4><a href="#">Creative Content Creation</a></h4>*@
+                        <h4 class="servivelink">Creative Content Creation</h4>
                         <p>I create scripts, storyboards and email briefs based on my client’s needs</p>
                     </div>
                 </div>
@@ -124,9 +208,9 @@
 
                 <div class="about-item">
                     <!--<div class="section-title">
-                <h2>Who is Nancy Anand</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-            </div>-->
+                        <h2>Who is Nancy Anand</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+                    </div>-->
 
 
                     <img src="~/img/team-4.jpg" class="about-img" alt="">
@@ -141,7 +225,7 @@
                 </div>
 
             </div>
-           
+
 
         </div>
 
@@ -152,42 +236,42 @@
 
             <div class="section-title">
                 <h2>Join the Id Intern group</h2>
-                   </div>
+            </div>
 
             <div class="row">
                 <div class="col-lg-2 col-md-12"></div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="box" data-aos="fade-up" data-aos-delay="100">
-                            <p>
-                                I run internship programs twice a year for aspiring instructional designers.
-                                I mentor my interns and help them build skills required to enter this field.
-                                I also help my interns land opportunities by reviewing their resumes, optimizing my network and through practice opportunities.
-                            </p>
-                        </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="box" data-aos="fade-up" data-aos-delay="100">
+                        <p>
+                            I run internship programs twice a year for aspiring instructional designers.
+                            I mentor my interns and help them build skills required to enter this field.
+                            I also help my interns land opportunities by reviewing their resumes, optimizing my network and through practice opportunities.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="col-lg-4 col-md-12 mt-12 mt-md-0">
-                       
-                        <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-                            <h5>Join ID Intern Group</h5>
-                            <p> </p>
-                            <form action="@Url.Action("Index", "Home")" method="post" role="form" class="php-email-form">
-                                <div class="row">
-                                    <input type="hidden" id="IsEnquiry" name="IsEnquiry" value="False" />
-                                    
-                                    <div class="col form-group">
-                                        <input type="email" class="form-control" name="Email" id="Email" placeholder="Your Email" required>
-                                    </div>
+                <div class="col-lg-4 col-md-12 mt-12 mt-md-0">
+
+                    <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+                        <h5>Join ID Intern Group</h5>
+                        <p> </p>
+                        <form action="@Url.Action("Index", "Home")" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <input type="hidden" id="IsEnquiry" name="IsEnquiry" value="False" />
+
+                                <div class="col form-group">
+                                    <input type="email" class="form-control" name="Email" id="Email" placeholder="Your Email" required>
                                 </div>
+                            </div>
 
-                                <div class="text-center"><button type="submit" class="block">Submit</button></div>
-                            </form>
-                        </div>
+                            <div class="text-center"><button type="submit" class="block">Submit</button></div>
+                        </form>
                     </div>
-
                 </div>
 
             </div>
+
+        </div>
     </section><!-- End intern Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -195,7 +279,7 @@
 
             <div class="section-title">
                 <h2>Contact</h2>
-                  </div>
+            </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
 
@@ -230,12 +314,12 @@
 
                         <div class="col form-group">
                             <select type="text" class="form-control" name="enquiry" id="enquiry" placeholder="type of enquiry" required>
-                          
-                                <option >Please Select One...*</option>
+
+                                <option>Please Select One...*</option>
                                 <option value="General enquiry">General enquiry</option>
                                 <option value="Pricing enquiry">Pricing enquiry</option>
                                 <option value="eLearning design and development">eLearning design and development</option>
-                               
+
                             </select>
                         </div>
 

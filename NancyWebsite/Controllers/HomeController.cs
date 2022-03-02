@@ -84,5 +84,10 @@ namespace NancyWebsite.Controllers
                 TempData["errormsg"] = "Something went wrong. Please try again later";
             }
         }
+        [HttpGet]
+        public ActionResult Portfolio()
+        { 
+            return View();
+        }
     }
 }
